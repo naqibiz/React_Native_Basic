@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
   },
   exercisebtn: {
     marginTop: 10,
-    fontSize: 15,
+    color: 'teal',
+    fontSize: 18,
   },
 });
 

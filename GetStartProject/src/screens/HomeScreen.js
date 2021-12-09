@@ -18,6 +18,11 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 30,
   },
+  clickhere: {
+    marginTop: 10,
+    color: 'teal',
+    fontSize: 17,
+  },
 });
 
 export default HomeScreen;

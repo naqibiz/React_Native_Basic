@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 
-const ExerciseScreen = () => {
+const ExerciseScreen = ({navigation}) => {
   const name = 'Muhammad Naqi';
   const email = 'muhammadnaqi@gmail.com';
   const number = 921331471;
@@ -11,6 +11,10 @@ const ExerciseScreen = () => {
       <Text style={styles.info}>My Name is {name}</Text>
       <Text style={styles.info}>This is my email {email} </Text>
       <Text style={styles.info}>This is my contact {number} </Text>
+
+      <TouchableOpacity onPress={() => navigation.navigate('ListScreen')}>
+        <Text style={styles.nextscreen}>Next Screen</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -23,6 +27,11 @@ const styles = StyleSheet.create({
     paddingBottom: 7,
     fontSize: 18,
     color: '#000',
+  },
+  nextscreen: {
+    marginTop: 10,
+    color: 'teal',
+    fontSize: 18,
   },
 });
 
