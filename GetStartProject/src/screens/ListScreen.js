@@ -23,9 +23,7 @@ const ListScreen = () => {
       <FlatList
         // horizontal={true}
         // showsHorizontalScrollIndicator={false}
-        keyExtractor={userinfo => {
-          userinfo.username;
-        }}
+        keyExtractor={userinfo => userinfo.username}
         data={userinfo}
         renderItem={({item}) => {
           return (

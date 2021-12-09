@@ -2,12 +2,14 @@ import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 
 const ComponentScreen = ({navigation}) => {
+  const reactnative = 'React Native';
   const First = 'Component';
   const Second = 'second';
   const Third = 'third';
   const Fourth = 'fourth';
   return (
     <View>
+      <Text style={styles.mainheading}>Getting start with {reactnative}</Text>
       <Text style={styles.text}>This is {First} Screen</Text>
       <Text style={styles.text}>This is {Second} element</Text>
       <Text style={styles.text}>This is {Third} element</Text>
@@ -29,6 +31,11 @@ const ComponentScreen = ({navigation}) => {
 }
 
 const styles = StyleSheet.create({
+  mainheading: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
   text: {
     fontSize: 20,
   },

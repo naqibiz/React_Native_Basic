@@ -5,11 +5,24 @@ const HomeScreen = ({navigation}) => {
   return (
     <View>
       <Text style={styles.text}>Hi there!</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('ComponentScreen')}>
-        <Text style={styles.clickhere}>
-          Click here and go to Component Screen
-        </Text>
-      </TouchableOpacity>
+      {/* ==================================== */}
+      <View style={{marginHorizontal: 20}}>
+        <Text style={styles.multiplescreen}>Below The Multiple Screens</Text>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ComponentScreen')}>
+          <Text style={styles.clickhere}>Click Here Component Screen</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('ListScreen')}>
+          <Text style={styles.clickhere}>Click Here List Screen</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('ImageScreen')}>
+          <Text style={styles.clickhere}>
+            Click Here Parent-Child Relationship In Image Example & Reuse
+            Component
+          </Text>
+        </TouchableOpacity>
+      </View>
+      {/* ==================================== */}
     </View>
   );
 };
@@ -17,11 +30,19 @@ const HomeScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
+    marginHorizontal: 20,
   },
   clickhere: {
-    marginTop: 10,
+    marginVertical: 10,
     color: 'teal',
     fontSize: 17,
+  },
+  multiplescreen: {
+    fontSize: 18,
+    textTransform: 'uppercase',
+    color: '#000',
+    marginTop: 15,
+    marginBottom: 10,
   },
 });
 

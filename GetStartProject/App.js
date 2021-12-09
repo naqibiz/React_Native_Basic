@@ -6,6 +6,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import ComponentScreen from './src/screens/ComponentScreen';
 import ExerciseScreen from './src/screens/ExerciseScreen';
 import ListScreen from './src/screens/ListScreen';
+import ImageScreen from './src/screens/ImageScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ function App() {
         <Stack.Screen name="ComponentScreen" component={ComponentScreen} />
         <Stack.Screen name="ExerciseScreen" component={ExerciseScreen} />
         <Stack.Screen name="ListScreen" component={ListScreen} />
+        <Stack.Screen name="ImageScreen" component={ImageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
