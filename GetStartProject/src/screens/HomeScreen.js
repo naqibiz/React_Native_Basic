@@ -21,6 +21,22 @@ const HomeScreen = ({navigation}) => {
             Component
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('StatesMultipleScreens')}>
+          <Text style={styles.clickhere}>
+            Click Here States React Component In Multiple Examples
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Reducer')}>
+          <Text style={styles.clickhere}>
+            Click Here Reducer (useReducer) Like a useState
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('CounterReducer')}>
+          <Text style={styles.clickhere}>
+            Click Here Counter Using By Reducer
+          </Text>
+        </TouchableOpacity>
       </View>
       {/* ==================================== */}
     </View>
