@@ -14,6 +14,7 @@ import ColorCounter from './src/components/ColorCounter';
 import SquareScreen from './src/screens/SquareScreen';
 import Reducer from './src/screens/Reducer';
 import CounterReducer from './src/screens/CounterReducer';
+import InputText from './src/screens/InputText';
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,7 @@ function App() {
         <Stack.Screen name="SquareScreen" component={SquareScreen} />
         <Stack.Screen name="Reducer" component={Reducer} />
         <Stack.Screen name="CounterReducer" component={CounterReducer} />
+        <Stack.Screen name="InputText" component={InputText} />
       </Stack.Navigator>
     </NavigationContainer>
   );

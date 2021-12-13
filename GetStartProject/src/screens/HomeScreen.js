@@ -37,6 +37,11 @@ const HomeScreen = ({navigation}) => {
             Click Here Counter Using By Reducer
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('InputText')}>
+          <Text style={styles.clickhere}>
+            Click Here TextInput In React Native
+          </Text>
+        </TouchableOpacity>
       </View>
       {/* ==================================== */}
     </View>
