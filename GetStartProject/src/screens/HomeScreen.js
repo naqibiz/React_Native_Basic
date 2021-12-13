@@ -42,6 +42,11 @@ const HomeScreen = ({navigation}) => {
             Click Here TextInput In React Native
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('ScreenLayout')}>
+          <Text style={styles.clickhere}>
+            Click Here Screen Layout Flex Properties
+          </Text>
+        </TouchableOpacity>
       </View>
       {/* ==================================== */}
     </View>

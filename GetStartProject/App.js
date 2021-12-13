@@ -15,6 +15,11 @@ import SquareScreen from './src/screens/SquareScreen';
 import Reducer from './src/screens/Reducer';
 import CounterReducer from './src/screens/CounterReducer';
 import InputText from './src/screens/InputText';
+import FlexAlignment from './src/screens/FlexAlignment';
+import ScreenLayout from './src/screens/ScreenLayout';
+import FlexDirection from './src/screens/LayoutFlexDirection';
+import LayoutJustifyContent from './src/screens/LayoutJustifyContent';
+import Flex from './src/screens/Flex';
 
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +43,11 @@ function App() {
         <Stack.Screen name="Reducer" component={Reducer} />
         <Stack.Screen name="CounterReducer" component={CounterReducer} />
         <Stack.Screen name="InputText" component={InputText} />
+        <Stack.Screen name="ScreenLayout" component={ScreenLayout} />
+        <Stack.Screen name="FlexAlignment" component={FlexAlignment} />
+        <Stack.Screen name="FlexDirection" component={FlexDirection} />
+        <Stack.Screen name="LayoutJustifyContent" component={LayoutJustifyContent} />
+        <Stack.Screen name="FlexValue" component={Flex} />
       </Stack.Navigator>
     </NavigationContainer>
   );
